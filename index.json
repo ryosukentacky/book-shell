@@ -1,0 +1,9 @@
+[
+  {
+    "id": "book-001",
+    "title": "本を読む人はうまくいく",
+    "file": "books/book-001.json",
+    "sections": 17,
+    "pages": 410
+  }
+]
