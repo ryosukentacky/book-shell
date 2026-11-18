@@ -1,1 +1,14 @@
-[{"id": "book-001", "title": "本を読む人はうまくいく", "file": "book-001.json", "count": 25}]
+[
+  {
+    "id": "book-001",
+    "title": "本を読む人はうまくいく",
+    "file": "book-001.json",
+    "count": 25
+  },
+  {
+    "id": "book-002",
+    "title": "スマホ時代の哲学：孤独と対話のレッスン",
+    "file": "book-002.json",
+    "count": 12
+  }
+]
