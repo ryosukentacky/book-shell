@@ -1,17 +1,10 @@
-# 読書学習ライブラリ（GitHub Pages用・フラット構成）
+# 読書学習ライブラリ（チャット本文版）
 
-## 修正点
-すべてのファイルを同じ階層に置く構成です。HTML・CSS・JavaScript・JSON・PDFの参照パスを一致させました。
+## GitHub Pages公開
+ZIPを展開し、`index.html`, `app.js`, `style.css`, `index.json`, `book-001.json` をリポジトリ直下にアップロードします。Settings → Pages → Deploy from a branch → main / (root) を指定してください。
 
-## GitHubにアップロード
-1. ZIPをWindowsで「すべて展開」します。
-2. GitHubのリポジトリで Add file → Upload files を選び、展開後の **8ファイルすべて** を選んでアップロードします。ZIPそのものはアップロードしません。
-3. 以前アップロードした同名ファイルは上書きしてください。
-4. Settings → Pages で main / (root) を公開します。
-5. 反映後、公開URLで Ctrl+Shift+R を押します。
+## 追加する本
+新しい本のチャット本文をJSON形式にして `book-002.json` を作成し、`index.json` に登録します。章の大テーマは `themes`、項目は `sections` に入れます。各項目には `chapter`, `number`, `title`, `text`, `pages` を設定します。
 
-## 本を追加
-Python と PyMuPDF を用意し、`pip install pymupdf` のあと `python add_book.py "次の本.pdf" "本のタイトル"` を実行します。生成された book-XXX.pdf、book-XXX.json、更新された index.json をGitHubへアップロードしてください。
-
-## 注意
-書籍PDFの公開には著作権・プライバシーの確認が必要です。GitHub Pagesは原則公開サイトです。PDF内の解説は原本を優先して表示します。全項目の分割と章の大テーマの精査は未完了です。
+## 元資料と整形の範囲
+この版はPDF 14〜186ページに含まれるNotebookLMチャット解説をWebテキスト化しています。不要な `[1]` 等の参照番号や抽出由来の改行を整理しています。第6章を含め章名・項目名は編集上の整理です。187ページ以降はOCRが乱れた原典引用等のため未収録です。PDFの文字抽出品質に依存するため、一部の不自然な改行や表記が残る可能性があります。

@@ -1,9 +1,1 @@
-[
-  {
-    "id": "book-001",
-    "title": "本を読む人はうまくいく",
-    "file": "book-001.json",
-    "sections": 17,
-    "pages": 410
-  }
-]
+[{"id": "book-001", "title": "本を読む人はうまくいく", "file": "book-001.json", "count": 25}]
